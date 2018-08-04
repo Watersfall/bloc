@@ -1,2 +1,6 @@
 SAV = "countries/Savannah.txt"
 UNH = "countries/United_Holds.txt"
+TPA = "countries/The_Pie_Army.txt"
+CJA = "countries/Cajinstan.txt"
+HEX = "countries/Hexis.txt"
+VDR = "countries/The_Light_Side.txt"

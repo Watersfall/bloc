@@ -8,7 +8,7 @@ state={
 		chromium=52 # was: 88
 	}
 
-	history={
+	history={ 
 		owner = SAV
 		buildings = {
 			infrastructure = 7
@@ -37,7 +37,6 @@ state={
 				industrial_complex = 3
 			}
 		}
-
 	}
 
 	provinces={
