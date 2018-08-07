@@ -5,11 +5,11 @@ state={
 	
 	state_category = pastoral
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = FRA
-		add_core_of = LAO
+	history={ 
+		owner = DER
+		add_core_of = DER
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 		}
 
 	}

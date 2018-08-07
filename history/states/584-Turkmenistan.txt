@@ -2,14 +2,14 @@ state={
 	id=584
 	name="STATE_584"
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = SOV
+	history={ 
+		owner = PST
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 
 		}
-		add_core_of = SOV
+		add_core_of = PST
 
 	}
 

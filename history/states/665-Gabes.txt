@@ -2,8 +2,9 @@ state={
 	id=665
 	name="STATE_665"
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = FRA
+	history={ 
+		owner = ARR
+		add_core_of = ARR
 		buildings = {
 			infrastructure = 3
 

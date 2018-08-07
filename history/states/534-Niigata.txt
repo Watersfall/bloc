@@ -6,9 +6,9 @@ state={
 	
 	state_category = city
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = JAP
-		add_core_of = JAP
+	history={ 
+		owner = TAE
+		add_core_of = TAE
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2

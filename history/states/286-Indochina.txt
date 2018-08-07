@@ -5,9 +5,9 @@ state={
 		rubber=55 # was: 94.000
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		add_core_of = VIN
-		owner = FRA
+	history={ 
+		add_core_of = CHB
+		owner = CHB
 		victory_points = {
 			4401 3 
 		}

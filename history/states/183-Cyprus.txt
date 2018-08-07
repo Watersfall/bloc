@@ -8,8 +8,9 @@ state= {
 		chromium=3 # was: 4
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={ 
+		owner = CPR
+		add_core_of = CPR
 		buildings = {
 			infrastructure = 4
 			air_base = 1

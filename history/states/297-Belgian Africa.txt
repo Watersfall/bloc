@@ -6,8 +6,8 @@ state=
 	
 	state_category = enclave
 	
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = SPR
+	history={ 
+		owner = BLL
 		buildings = {
 			infrastructure = 2
 			1903 = {
@@ -17,6 +17,7 @@ state=
 				naval_base = 1
 			}
 		}
+		add_core_of = BLL
 	}
 	provinces=
 	{

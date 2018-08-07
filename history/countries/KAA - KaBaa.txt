@@ -1,4 +1,4 @@
-capital = 0
+capital = 298
 
 #oob = "NEP_1936"
 

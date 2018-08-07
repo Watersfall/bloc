@@ -1,6 +1,6 @@
 state={
 	id=728
-	name="STATE_728"
+	name="Northern Madagascar"
 	manpower = 200000
 	
 	state_category = enclave
@@ -11,13 +11,10 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 3
-			11981 = {
-				naval_base = 1
-			}
 		}
 	}
 	
 	provinces={
-		11981 
+		5128 5185 5222 8188 11015
 	}
 }

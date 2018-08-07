@@ -10,8 +10,8 @@ state=
 	}	
 	
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = LIB
+	history={ 
+		owner = KAA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -23,7 +23,7 @@ state=
 		victory_points = {
 			7959 3
 		}
-		add_core_of = LIB
+		add_core_of = KAA
 	}
 	provinces={
 		7959 8006

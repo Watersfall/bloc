@@ -6,8 +6,9 @@ state={
 
 	state_category = rural
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = RAJ
+	history={ 
+		owner = KWN
+		add_core_of = KWN
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

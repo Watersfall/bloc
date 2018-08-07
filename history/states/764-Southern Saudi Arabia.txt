@@ -1,0 +1,21 @@
+state={
+	id=764
+	name="Southern Saudi Arabia"
+	provinces={
+		12768 10870 8030 
+	}
+	manpower=1000000
+	resources={
+		steel=19 # was: 60
+		aluminium=7 # was: 20
+	}
+	state_category = city
+	history={
+		owner = RET
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = RET
+	}
+}

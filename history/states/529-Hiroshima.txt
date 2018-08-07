@@ -5,9 +5,9 @@ state={
 	manpower = 5341000
 	state_category = large_city
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = JAP
-		add_core_of = JAP
+	history={ 
+		owner = SAV
+		add_core_of = SAV
 		buildings = {
 			infrastructure = 7
 			air_base = 3

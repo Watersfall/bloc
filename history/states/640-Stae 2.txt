@@ -6,8 +6,8 @@ state={
 	
 	state_category = town
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = RAJ
+	history={ 
+		owner = MST
 		buildings = {
 			infrastructure = 3
 			air_base = 1

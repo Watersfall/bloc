@@ -9,8 +9,9 @@ state={
 		steel=26 # was: 36
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = FRA
+	history={  
+		owner = MOL
+		add_core_of = MOL
 		
 		victory_points = {
 			1145 5 

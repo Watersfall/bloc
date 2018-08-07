@@ -5,10 +5,8 @@ state={
 		tungsten=6.000
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = PRC
+	history={
+		owner = GLU
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1

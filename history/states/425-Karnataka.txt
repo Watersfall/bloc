@@ -11,8 +11,8 @@ state={
 		tungsten=76 # was: 128
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = RAJ
+	history={ 
+		owner = TAJ
 		victory_points = {
 			8011 1
 		}

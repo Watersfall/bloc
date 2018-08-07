@@ -10,8 +10,8 @@ state=
 		rubber=60 # was: 116
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={ 
+		owner = FKT
 		victory_points = {
 			10201 3 
 		}

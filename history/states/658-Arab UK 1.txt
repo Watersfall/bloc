@@ -10,8 +10,8 @@ state={
 	state_category = pastoral
 
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={ 
+		owner = NIK
 		victory_points = {
 			7960 1 
 		}
@@ -24,7 +24,7 @@ state={
 				naval_base = 2
 			}
 		}
-
+		add_core_of = NIK
 	}
 
 	provinces={

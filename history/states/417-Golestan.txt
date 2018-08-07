@@ -5,8 +5,8 @@ state={
 	manpower = 796396
 	state_category = rural
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = PER
+	history={ 
+		owner = APQ
 		buildings = {
 			infrastructure = 3
 		}

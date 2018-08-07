@@ -10,9 +10,9 @@ state={
 		tungsten=8 # was: 10
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = JAP
-		add_core_of = JAP
+	history={ 
+		owner = OUY
+		add_core_of = OUY
 		buildings = {
 		
 			arms_factory = 1

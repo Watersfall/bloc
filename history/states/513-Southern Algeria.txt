@@ -6,8 +6,9 @@ state={
 	
 	state_category = wasteland
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = FRA
+	history={ 
+		owner = MOL
+		add_core_of = MOL
 		buildings = {
 			infrastructure = 2
 		}

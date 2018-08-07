@@ -6,13 +6,13 @@ state=
 	
 	state_category = wasteland
 	
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={
+		owner = EZR
 		buildings = {
 			infrastructure = 1
 		}
 
-		add_core_of = EGY
+		add_core_of = EZR
 	}
 	provinces={
 		1080 4068 4910 5069 7156 9957 10126 12002 12889 

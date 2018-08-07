@@ -9,8 +9,8 @@ state=
 	resources={
 		chromium=2 # was: 3
 	}
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = HAI
+	history={ 
+		owner = ATO
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -20,7 +20,7 @@ state=
 				naval_base = 3
 			}
 		}
-		add_core_of = HAI
+		add_core_of = ATO
 		victory_points = {
 			4641 5 
 		}

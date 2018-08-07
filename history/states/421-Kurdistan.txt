@@ -6,12 +6,12 @@ state={
 	
 	state_category = rural
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = PER
+	history={ 
+		owner = VNT
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = PER
+		add_core_of = VNT
 	}
 
 	provinces={

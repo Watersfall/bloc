@@ -1,4 +1,4 @@
-capital = 0
+capital = 525
 
 #oob = "NEP_1936"
 
@@ -32,7 +32,7 @@ set_politics = {
 	elections_allowed = no
 	}
 create_country_leader = {
-	name = %name%
+	name = "Sherri"
 	desc = "POLITICS_JUDDHA_RANA_DESC"
 	picture = "LON.dds"
 	expire = "1965.1.1"

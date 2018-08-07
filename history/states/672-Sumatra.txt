@@ -12,9 +12,9 @@ state={
 	}
 
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = INS
-		add_core_of = INS
+	history={ 
+		owner = NTB
+		add_core_of = NTB
 		victory_points = {
 			4652 1 
 		}

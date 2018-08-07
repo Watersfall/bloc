@@ -1,4 +1,4 @@
-capital = 0
+capital = 1
 
 #oob = "NEP_1936"
 
@@ -34,7 +34,7 @@ set_politics = {
 create_country_leader = {
 	name = %name%
 	desc = "POLITICS_JUDDHA_RANA_DESC"
-	picture = "LON.dds"
+	picture = "LNC.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

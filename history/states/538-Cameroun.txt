@@ -8,12 +8,12 @@ state={
 	resources={
 		rubber=5 # was: 5
 	}
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = BEL
+	history={
+		owner = LTP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 		}
-		add_core_of = COG
+		add_core_of = LTP
 	}
 
 	provinces={
