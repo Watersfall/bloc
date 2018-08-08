@@ -5,8 +5,8 @@ state={
 	
 	state_category = pastoral
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = SAU
+	history={ 
+		owner = UTO
 		victory_points = {
 			12758 1 
 		}
@@ -19,10 +19,10 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = SAU
+		add_core_of = UTO
 	}
 
 	provinces={
-		1033 2027 2033 2090 2095 4981 5037 7934 8092 10748 10835 12101 12758 12883 
+		1033 2027 2095 8092 10835 12101 12758 
 	}
 }

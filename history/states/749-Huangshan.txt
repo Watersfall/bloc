@@ -7,10 +7,9 @@ state={
 	manpower=5000000
 	buildings_max_level_factor=1.000
 	state_category=town
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = PRC
+	history={ 
+		owner = GOG
+		add_core_of = GOG
 		buildings = {
 			infrastructure = 4
 		}

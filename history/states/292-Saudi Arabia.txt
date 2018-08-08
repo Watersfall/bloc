@@ -9,8 +9,8 @@ state={
 		oil=3 # was: 3
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = SAU
+	history={  
+		owner = UTO
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -22,10 +22,10 @@ state={
 		victory_points = {
 			12727 5
 		}
-		add_core_of = SAU
+		add_core_of = UTO
 	}
 
 	provinces={
-		 1955 2057 4968 4974 5024 5027 5058 5093 5099 7970 7995 8004 8060 8101 10791 10815 10850 10892 10901 10923 12455 12702 12727 12749 12813 12870 
+		2057 4968 4974 5027 5058 5099 7970 8101 10815 10901 10923 12455 12749 
 	}
 }

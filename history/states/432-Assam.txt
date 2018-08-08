@@ -10,8 +10,9 @@ state={
 		oil=5 # was: 6
 	}
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = RAJ
+	history={ 
+		owner = GYP
+		add_core_of = GYP
 		buildings = {
 			infrastructure = 3
 		}

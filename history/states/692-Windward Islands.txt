@@ -1,6 +1,6 @@
 state={
 	id=692
-	name="STATE_692"
+	name="South Nejd"
 	manpower=76485
 	state_category = small_island
 
@@ -15,6 +15,6 @@ state={
 	}
 	
 	provinces={
-		379 11106 11350 13009 
+		8004 10892 12813 12870 12727 8060 5093 
 	}
 }

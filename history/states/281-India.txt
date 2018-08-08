@@ -6,8 +6,9 @@ state={
 	
 	state_category = enclave
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={ 
+		owner = NEI
+		add_core_of = NEI
 		buildings = {
 			infrastructure = 3
 			4967 = {

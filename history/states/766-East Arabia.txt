@@ -1,0 +1,19 @@
+state={
+	id=766
+	name="East Arabia"
+	manpower = 80000
+	
+	state_category = rural
+	
+	history={ 
+		owner = NCP
+        add_core_of = NCP
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+	provinces={
+		1955 5024 7995 10791 10850 12702
+	}
+}
