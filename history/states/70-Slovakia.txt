@@ -4,12 +4,17 @@ state={
 	manpower = 1230500
 	
 	state_category = city
-	
 	resources={
-		tungsten=1 # was: 2
+		chromium=16
+		oil=16
+		steel=16
+		tungsten=16
+		rubber=16
+		aluminium=16
 	}
+	
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
+history={ 1936.1.3.12={ owner = AAA controller = AAA buildings = { infrastructure = 5 arms_factory=5 industrial_complex = 5 air_base = 1}} 
 		owner = CZE
 		victory_points = {
 			9692 10 

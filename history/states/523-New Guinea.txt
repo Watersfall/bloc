@@ -2,7 +2,7 @@ state={
 	id=523
 	name="STATE_523"
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
+history={ 1936.1.3.12={ owner = AAA controller = AAA buildings = { infrastructure = 5 arms_factory=5 industrial_complex = 5 air_base = 1}} 
 		owner = AST
 		buildings = {
 			infrastructure = 2
@@ -41,4 +41,12 @@ state={
 	manpower=1077000
 	buildings_max_level_factor=1
 	state_category="rural"
+	resources={
+		chromium=16
+		oil=16
+		steel=16
+		tungsten=16
+		rubber=16
+		aluminium=16
+	}
 }

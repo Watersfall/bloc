@@ -1,0 +1,32 @@
+focus_tree = {
+	id = lone_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LON
+		}
+	}
+
+    default = no
+
+    focus = {
+        id = LON_edgy_chat_shit
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_named_threat = { 
+                threat = 10
+                name = LON_edgy_chat_shit
+            }
+		}
+    }
+}
