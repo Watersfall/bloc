@@ -8,8 +8,8 @@ state=
 	}
 	
 	state_category = town
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = HON
+	history={ 
+		owner = NAN
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -22,13 +22,13 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = HON
+		add_core_of = NAN
 		victory_points = {
 			12865 3 
 		}
 
 	}
 	provinces={
-		2031 8017 12865
+		2031 8017 12823 12865 13093 
 	}
 }

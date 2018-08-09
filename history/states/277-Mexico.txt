@@ -6,15 +6,15 @@ state={
 	
 	state_category = city
 	
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = MEX
+	history={ 
+		owner = HND
 		buildings = {
 			infrastructure = 5
 			arms_factory = 2
 			industrial_complex = 4
 			air_base = 3
 		}
-		add_core_of = MEX
+		add_core_of = HND
 		victory_points = {
 			1965 10 
 		}

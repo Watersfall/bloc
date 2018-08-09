@@ -4,8 +4,9 @@ state={
 	manpower=76485
 	state_category = small_island
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={ 
+		owner = PLE
+		add_core_of = PLE
 		buildings = {
 			infrastructure = 4
 			11350 = {

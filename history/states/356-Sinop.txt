@@ -5,15 +5,15 @@ state={
 	manpower = 860589
 	state_category = rural
 
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = TUR
+	history={
+		owner = MEZ
 		buildings = {
 			infrastructure = 3
 			6995 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = TUR
+		add_core_of = MEZ
 	}
 
 	provinces={

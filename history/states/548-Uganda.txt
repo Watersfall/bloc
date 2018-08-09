@@ -6,13 +6,13 @@ state={
 	resources={
 		rubber=3 # was: 4
 	}
-	history={ 1936.1.3.12={ owner = AAA controller = AAA } 
-		owner = ENG
+	history={
+		owner = KNG
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = KEN
+		add_core_of = KNG
 	}
 
 	provinces={
