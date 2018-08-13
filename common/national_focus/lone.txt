@@ -27,6 +27,14 @@ focus_tree = {
                 threat = 10
                 name = LON_edgy_chat_shit
             }
+			hidden_effect = {
+				POI = {
+					country_event = {
+						days = 1
+						id = emp.0
+					}
+				}
+			}
 		}
     }
 }

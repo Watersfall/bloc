@@ -1,0 +1,13 @@
+add_namespace = blocnews
+
+news_event = {
+    id = blocnews.0
+    title = blocnews.0.t
+    desc = blocnews.0.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = blocnews.0.worrying
+    }
+}

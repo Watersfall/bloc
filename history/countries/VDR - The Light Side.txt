@@ -1,12 +1,54 @@
 capital = 594
 
-#oob = "NEP_1936"
+oob = "Default_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 }
+
+create_faction = "The Agoge"
+add_to_faction = GLU
+add_to_faction = LOR
+add_to_faction = KAA
+add_to_faction = LBV
+add_to_faction = TMP
+add_to_faction = NGT
+add_to_faction = NWR
+add_to_faction = APQ
+add_to_faction = FKT
+add_to_faction = ZLT
+add_to_faction = ATU
+add_to_faction = ADF
+add_to_faction = TRS
+add_to_faction = GOR
+add_to_faction = BLL
+add_to_faction = LNC
+add_to_faction = SPS
+add_to_faction = EZR
+add_to_faction = AKD
+add_to_faction = GTK
+add_to_faction = NTB
+add_to_faction = NAZ
+add_to_faction = LTP
+add_to_faction = GGS
+add_to_faction = BIS
+add_to_faction = USR
+add_to_faction = JIH
+add_to_faction = BSS
+add_to_faction = ROD
+add_to_faction = TSA
+add_to_faction = VNT
+add_to_faction = TEU
+add_to_faction = NIK
+add_to_faction = OUY
+add_to_faction = WAF
+add_to_faction = BRL
+add_to_faction = SPO
+add_to_faction = AAF
+add_to_faction = HEX
+
 set_war_support = 0.1
 set_stability = 0.8
 1939.1.1 = {
@@ -72,11 +114,11 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -87,7 +129,7 @@ create_country_leader = {
 	desc = "POLITICS_JUDDHA_RANA_DESC"
 	picture = "VDR.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -110,11 +152,11 @@ create_country_leader = {
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

@@ -1,6 +1,6 @@
 capital = 1
 
-#oob = "NEP_1936"
+oob = "Default_1936"
 
 # Starting tech
 
@@ -8,6 +8,50 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 }
+
+create_faction = "ROP"
+add_to_faction = VAL
+add_to_faction = CHB
+add_to_faction = DER
+add_to_faction = MEL
+add_to_faction = PST
+add_to_faction = POI
+add_to_faction = UNN
+add_to_faction = TAJ
+add_to_faction = NAD
+add_to_faction = MST
+add_to_faction = NCS
+add_to_faction = KHA
+add_to_faction = PPS
+add_to_faction = NGR
+add_to_faction = JAD
+add_to_faction = ARR
+add_to_faction = GPE
+add_to_faction = NEO
+add_to_faction = TAE
+add_to_faction = SAS
+add_to_faction = OFA
+add_to_faction = BLS
+add_to_faction = SNA
+add_to_faction = RET
+add_to_faction = ATO
+add_to_faction = KIO
+add_to_faction = TYG
+add_to_faction = REV
+add_to_faction = TOL
+add_to_faction = TAD
+add_to_faction = CPR
+add_to_faction = KWN
+add_to_faction = MOL
+add_to_faction = CHN
+add_to_faction = BLA
+add_to_faction = VAR
+add_to_faction = KIN
+add_to_faction = MAR
+add_to_faction = CWL
+add_to_faction = LON
+
+
 set_war_support = 0.1
 set_stability = 0.8
 set_politics = {
@@ -16,17 +60,17 @@ set_politics = {
 			popularity = 0
 		}
 		fascism = {
-			popularity = 0
+			popularity = 100
 		}
 		communism = {
 			popularity = 0
 		}
 		neutrality = { 
-			popularity = 100
+			popularity = 0
 		}
 	}
 
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -36,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_JUDDHA_RANA_DESC"
 	picture = "LON.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}

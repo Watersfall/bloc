@@ -1,0 +1,34 @@
+add_namespace = emp
+
+country_event = {
+    id = emp.0
+    title = emp.0.t
+    desc = emp.0.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = emp.0.ignore
+        add_named_threat = {
+            threat = 5
+            name = emp.0.ignoreThreat
+        }
+        hidden_effect = {
+			news_event = { 
+                hours = 6 
+                id = blocnews.0
+            }
+		}
+    }
+
+    option = {
+        name = emp.0.action
+        add_named_threat = {
+            threat = -3
+            name = emp.0.actionThreat
+        }
+        LON = {
+            leave_faction = yes
+        }
+    }
+}
