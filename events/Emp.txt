@@ -1,5 +1,6 @@
 add_namespace = emp
 
+#Emp gets this when Lone does his edgy chat shit focus
 country_event = {
     id = emp.0
     title = emp.0.t
@@ -28,7 +29,97 @@ country_event = {
             name = emp.0.actionThreat
         }
         LON = {
-            leave_faction = yes
+            country_event = {
+                days = 1
+                id = lone.0
+            }
+        }
+    }
+}
+
+#Emp gets this when lone does his second focus
+country_event = {
+    id = emp.1
+    title = emp.1.t
+    desc = emp.1.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = emp.1.ignore
+        add_named_threat = {
+            threat = 5
+            name = emp.1.ignoreThreat
+        }
+    }
+
+    option = {
+        name = emp.1.action
+        add_named_threat = {
+            threat = -3
+            name = emp.1.action
+        }
+        LON = {
+            country_event = {
+                days = 1
+                id = lone.0
+            }
+        }
+    }
+}
+
+#When lone rejects emps demands
+country_event = {
+    id = emp.2
+    title = emp.2.t
+    desc = emp.2.d
+
+    is_triggered_only = yes
+
+    #give in
+    option = {
+        name = emp.2.givein
+        add_named_threat = {
+            threat = 5
+            name = emp.2.givein
+        }
+        every_other_country = {
+            LIMIT = {
+                NOT = {
+                    is_in_faction_with = POI
+                }
+            }
+            add_war_support = 0.05
+        }
+
+        every_other_country = {
+            LIMIT = {
+                is_in_faction_with = POI
+            }
+            add_war_support = -0.05
+            add_stability = -0.05
+        }
+
+        hidden_effect = {
+            news_event = { 
+                hours = 6 
+                id = blocnews.0
+            }
+        }
+        
+    }
+
+    #stand strong
+    option = {
+        name = emp.2.refuse
+        POI = {
+            remove_from_faction = LON
+        }
+        hidden_effect = {
+            news_event = { 
+                hours = 6 
+                id = blocnews.1
+            }
         }
     }
 }

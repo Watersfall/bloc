@@ -1,0 +1,67 @@
+add_namespace = savannah
+
+#When lone kicks
+country_event = {
+    id = savannah.0
+    title = savannah.0.t
+    desc = savannah.0.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = savannah.0.joinfb
+        add_war_support = 0.05
+        JUK = {
+            add_to_faction = SAV
+        }
+    }
+
+    option = {
+        name = savannah.0.joinrop
+        add_stability = -0.05
+        POI = {
+            add_to_faction = SAV
+        }
+    }
+
+    option = {
+        name = savannah.0.makeownalliance
+        SAV = {
+            create_faction = "Asian Alliance"
+        }
+        every_other_country = {
+            LIMIT = {
+                any_owned_state = {
+                    is_on_continent = asia
+                }
+                NOT = {
+                    is_faction_leader = yes
+                    tag = LON
+                }
+            }
+            country_event = {
+                days = 1
+                id = savannah.1
+            }
+        }
+    }
+}
+
+country_event = {
+    id = savannah.1
+    title = savannah.1.t
+    desc = savannah.1.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = savannah.1.join
+        SAV = {
+            add_to_faction = ROOT
+        }
+    }
+
+    option = {
+        name = savannah.1.refuse
+    }
+}

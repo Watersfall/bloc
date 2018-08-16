@@ -1,4 +1,7 @@
 ﻿l_english:
  blocnews.0.t:0 "Lone Says Edgy Shit!"
  blocnews.0.d:0 "Lone's excessive shitposting is damaging his and ROP's relations with the rest of the world. Whether Emp will put a stop to it is yet to be seen..." 
- blocnews.0.worrying:0 "Worrying"
+ blocnews.1.t:0 "Lone Kicked from ROP!"
+ blocnews.1.d:0 "After an ultimatum from Emp, Lone has been removed from the ROP. It has yet to be seen if the damage to ROP's reputation can be repaired, or if it is permanent..."
+ blocnews.1.good:0 "Good Riddance"
+ blocnews.worrying:0 "Worrying"

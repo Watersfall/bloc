@@ -1,1 +1,36 @@
 add_namespace = lone
+
+#When emp says "stop"
+country_event = {
+    id = lone.0
+    title = lone.0.t
+    desc = lone.0.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = lone.0.ignore
+        add_named_threat = {
+            threat = 5
+            name = lone.0.ignore
+        }
+        POI = {
+            country_event = {
+                days = 1
+                id = emp.2
+            }
+        }
+    }
+
+    option = {
+        name = lone.0.accept
+        add_named_threat = {
+            threat = -2
+            name = lone.0.accept
+        }
+        LON = {
+            add_stability = -0.1
+            add_war_support = -0.1
+        }
+    }
+}

@@ -1,0 +1,17 @@
+add_namespace = jukovanje
+
+country_event = {
+    id = jukovanje.0
+    title = jukovanje.0.t
+    desc = jukovanje.0.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = jukovanje.0.strike
+    }
+
+    option = {
+        name = jukovanje.0.wait
+    }
+}

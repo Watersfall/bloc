@@ -12,6 +12,10 @@ focus_tree = {
 
     default = no
 
+
+	##########################################################
+	###############   LETS FUCK UP THE WORLD   ###############
+	##########################################################
     focus = {
         id = LON_edgy_chat_shit
 		icon = GFX_goal_generic_construction
@@ -20,6 +24,20 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+
+		available = {
+			LON = {
+				is_in_faction_with = POI
+			}
+		}
+
+		cancel = {
+			LON = {
+				NOT = {
+					is_in_faction_with = POI
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -37,4 +55,192 @@ focus_tree = {
 			}
 		}
     }
+
+	focus = {
+		id = LON_kick_people
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 2
+
+		prerequisite = {
+			focus = LON_edgy_chat_shit
+		}
+
+		available = {
+			LON = {
+				is_in_faction_with = POI
+			}
+		}
+
+		cancel = {
+			LON = {
+				NOT = {
+					is_in_faction_with = POI
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		completion_reward = {
+			add_named_threat = { 
+                threat = 10
+                name = LON_kick_people
+            }
+		}
+	}
+
+	focus = {
+		id = LON_ban_people
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 4
+
+		prerequisite = {
+			focus = LON_kick_people
+		}
+
+		available = {
+			LON = {
+				is_in_faction_with = POI
+			}
+		}
+
+		cancel = {
+			LON = {
+				NOT = {
+					is_in_faction_with = POI
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		completion_reward = {
+			add_named_threat = { 
+                threat = 10
+                name = LON_ban_people
+            }
+		}
+	}
+
+	focus = {
+		id = LON_kick_savannah
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 6
+
+		prerequisite = {
+			focus = LON_ban_people
+		}
+
+		bypass = {
+			NOT = {
+				SAV = {
+					is_in_faction_with = LON
+				}
+			}
+		}
+
+		available = {
+			LON = {
+				is_in_faction_with = POI
+			}
+		}
+
+		cancel = {
+			LON = {
+				NOT = {
+					is_in_faction_with = POI
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		completion_reward = {
+			add_named_threat = { 
+                threat = 10
+                name = LON_kick_savannah
+            }
+			POI = {
+				remove_from_faction = SAV
+			}
+			hidden_effect = {
+				SAV = {
+					country_event = {
+						id = savannah.0
+						days = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LON_lets_lose_a_war
+		icon = GFX_goal_generic_construction
+		x = 6
+		y = 8
+
+		prerequisite = {
+			focus = LON_kick_savannah
+		}
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 12
+
+			modifier = {
+				factor = 100
+				SAV = {
+					is_in_faction_with = JUK
+				}
+			}
+		}
+
+		select_effect = {
+			JUK = {
+				country_event = {
+					id = jukovanje.0
+					days = 2
+				}
+			}
+			LON = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+				#ai_call_ally_desire_factor = -1000
+			}
+			FRE = {
+				#ai_call_ally_desire_factor = -1000
+			}
+    	}
+
+		completion_reward = {
+			every_country = {
+				LIMIT = {
+					is_in_faction_with = POI
+				}
+				add_war_support = 0.05
+			}
+			hidden_effect = {
+				LIMIT = {
+					is_in_faction_with = JUK
+				}
+				add_war_support = 0.10
+			}
+		}
+	}
 }

@@ -11,3 +11,19 @@ news_event = {
         name = blocnews.0.worrying
     }
 }
+
+news_event = {
+    id = blocnews.1
+    title = blocnews.1.t
+    desc = blocnews.1.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = blocnews.worrying
+    }
+
+    option = {
+        name = blocnews.1.good
+    }
+}

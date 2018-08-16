@@ -35,28 +35,27 @@ add_to_faction = TRO
 add_to_faction = WHS
 add_to_faction = NEI
 add_to_faction = SOR
-add_to_faction = SAV
 add_to_faction = UNH
 add_to_faction = TPA
 add_to_faction = CJA
 add_to_faction = TRE
 add_to_faction = GRA
 
-set_war_support = 0.1
-set_stability = 0.8
+set_war_support = 0.5
+set_stability = 0.5
 set_politics = {
 	parties = {
 		democratic = { 
 			popularity = 0
 		}
 		fascism = {
-			popularity = 100
+			popularity = 0
 		}
 		communism = {
 			popularity = 0
 		}
 		neutrality = { 
-			popularity = 0
+			popularity = 100
 		}
 	}
 

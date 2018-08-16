@@ -8,7 +8,7 @@ bookmarks = {
 		default = yes
 		
 		"HEX" = {
-			history = "HEX_START_DESC"
+			history = "He paid for this spot lmao what a loser"
 			ideology = neutrality
 			ideas = {
 				
@@ -18,8 +18,8 @@ bookmarks = {
 			}
 		}
 
-		"SAV" = {
-			history = "SAV_START_DESC"
+		"JUK" = {
+			history = 
 			ideology = neutrality
 			ideas = {
 				
@@ -29,8 +29,8 @@ bookmarks = {
 			}
 		}
 
-		"UNH" = {
-			history = "UNH_START_DESC"
+		"FRE" = {
+			history = 
 			ideology = neutrality
 			ideas = {
 				
@@ -40,8 +40,8 @@ bookmarks = {
 			}
 		}
 
-		"CJA" = {
-			history = "CJA_START_DESC"
+		"LON" = {
+			history = 
 			ideology = neutrality
 			ideas = {
 				
@@ -51,8 +51,8 @@ bookmarks = {
 			}
 		}
 
-		"TPA" = {
-			history = "TPA_START_DESC"
+		"POI" = {
+			history = 
 			ideology = neutrality
 			ideas = {
 				
@@ -63,7 +63,7 @@ bookmarks = {
 		}
 
 		"VDR" = {
-			history = "VDR_START_DESC"
+			history = 
 			ideology = neutrality
 			ideas = {
 				
@@ -72,6 +72,28 @@ bookmarks = {
 				
 			}
 		}
+
+		"CAD" = {
+			history = 
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+
+
+
+
+
+		
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
