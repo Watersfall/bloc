@@ -1,0 +1,340 @@
+ideas = {
+    country = {
+        middle_east_oil = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                production_oil_factor = 0.33
+                production_speed_synthetic_refinery_factor = 0.33
+            }
+        }
+
+        asia_factory = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_factory = 0.33
+                industrial_capacity_dockyard = 0.33
+                production_speed_buildings_factor = 0.33
+                MONTHLY_POPULATION = 0.33
+            }
+        }
+
+        america_africa_rm = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                local_resources_factor = 0.5
+            }
+        }
+
+        resource_bonus_0 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                local_resources_factor = 0.15
+            }
+        }
+
+        resource_bonus_1 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                local_resources_factor = 0.30
+            }
+        }
+
+        resource_bonus_2 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                local_resources_factor = 0.45
+            }
+        }
+
+        resource_bonus_3 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                local_resources_factor = 0.60
+            }
+        }
+
+        military_industry_0 = {
+            
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.05                
+            }
+        }
+
+        asia_military_industry_0 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.10
+            }
+        }
+
+        military_industry_1 = {
+            
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.075
+                }
+            }
+        }
+
+        asia_military_industry_1 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.10
+            }
+
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.15
+                }
+            }
+        }
+
+        military_industry_2 = {
+            
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.10
+            }
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.10
+                }
+            }
+        }
+
+        asia_military_industry_2 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.20
+            }
+
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.25
+                }
+            }
+        }
+
+        military_industry_2 = {
+            
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.10
+            }
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.10
+                }
+            }
+        }
+
+        asia_military_industry_2 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.20
+            }
+
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.25
+                }
+            }
+        }
+
+        military_industry_3 = {
+            
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.10
+            }
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.15
+                }
+            }
+        }
+
+        asia_military_industry_3 = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.25
+            }
+
+            equipment_bonus = {
+                infantry = {
+                    build_cost_ic = -0.40
+                }
+            }
+        }
+    }
+}

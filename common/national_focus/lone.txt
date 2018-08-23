@@ -12,6 +12,23 @@ focus_tree = {
 
     default = no
 
+	##########################################################
+	######################   INDUSTRY   ######################
+	##########################################################
+
+	focus = {
+		id = LON_industry_1
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+	}
+
+
 
 	##########################################################
 	###############   LETS FUCK UP THE WORLD   ###############
@@ -236,10 +253,12 @@ focus_tree = {
 				add_war_support = 0.05
 			}
 			hidden_effect = {
-				LIMIT = {
-					is_in_faction_with = JUK
+				every_country = {
+					LIMIT = {
+						is_in_faction_with = JUK
+					}
+					add_war_support = 0.10
 				}
-				add_war_support = 0.10
 			}
 		}
 	}

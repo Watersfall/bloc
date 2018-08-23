@@ -1,0 +1,557 @@
+focus_tree = {
+    id = default_focus
+
+    default = yes
+
+    continuous_focus_position = { 
+        x = 50 
+        y = 1500 
+    }
+
+    ##########################################################
+	######################   ECONOMIC   ######################
+	##########################################################
+
+    ##Region Bonus Side
+
+    ##Needs to unlock basic desisions 
+    focus = {
+        id = DEFAULT_economy_0
+        x = 3
+        y = 1
+        icon = na
+        cost = 10
+
+
+        available = {
+            OR = {
+                has_idea = middle_east_oil
+                has_idea = asia_factory
+                has_idea = america_africa_rm
+            }
+        }
+
+        bypass = {
+            OR = {
+                AND = {
+                    has_idea = middle_east_oil
+                    has_tech = synth_oil_experiments
+                }
+                AND = {
+                    has_idea = america_africa_rm
+                    has_tech = excavation1
+                }
+                AND = {
+                    has_idea = asia_factory
+                    OR = {
+                        has_tech = concentrated_industry
+                        has_tech = dispersed_industry
+                    }
+                }
+            }
+        }
+
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = middle_east_oil
+                }
+                set_technology = {
+                    synth_oil_experiments = 1
+                }
+            }
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                set_technology = {
+                    basic_machine_tools = 1
+                }
+                add_tech_bonus = {
+                    name = asia_start
+                    bonus = 0.5
+                    uses = 2
+                    technology = concentrated_industry
+                    technology = dispersed_industry
+                    technology = construction1
+                }
+            }
+            IF = {
+                limit = {
+                    has_idea = america_africa_rm
+                }
+                set_technology = {
+                    construction1 = 1
+                }
+                add_tech_bonus = {
+                    name = america_africa_start
+                    bonus = 1
+                    uses = 1
+                    technology = excavation1
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_economy_0
+        x = 1
+        y = 2
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_economy_0
+        }
+
+        available = {
+            OR = {
+                AND = {
+                    has_idea = middle_east_oil
+                    has_tech = synth_oil_experiments
+                }
+                AND = {
+                    has_idea = america_africa_rm
+                    has_tech = excavation1
+                }
+                AND = {
+                    has_idea = asia_factory
+                    OR = {
+                        has_tech = concentrated_industry
+                        has_tech = dispersed_industry
+                    }
+                }
+            }
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = middle_east_oil
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = america_africa_rm
+                }
+                add_ideas = resource_bonus_0
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_economy_1
+        x = 1
+        y = 4
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_build_economy_0
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = middle_east_oil
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = america_africa_rm
+                }
+                remove_ideas = resource_bonus_0
+                add_ideas = resource_bonus_1
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_economy_2
+        x = 1
+        y = 6
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_build_economy_1
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = middle_east_oil
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = america_africa_rm
+                }
+                remove_ideas = resource_bonus_1
+                add_ideas = resource_bonus_2
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_economy_3
+        x = 1
+        y = 8
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_build_economy_2
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = middle_east_oil
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+
+            IF = {
+                limit = {
+                    has_idea = america_africa_rm
+                }
+                remove_ideas = resource_bonus_2
+                add_ideas = resource_bonus_3
+            }
+        }
+    }
+
+    ##Infrastructure side
+    focus = {
+        id = DEFAULT_infrastructure_0
+        x = 3
+        y = 3
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_economy_0
+        }
+
+        bypass = {
+            NOT = {
+                any_owned_state = {
+                    infrastructure < 9
+                }
+            }
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    infrastructure < 9
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_infrastructure_1
+        x = 3
+        y = 5
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_infrastructure_0
+        }
+
+        bypass = {
+            NOT = {
+                any_owned_state = {
+                    infrastructure < 9
+                }
+            }
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    infrastructure < 9
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_infrastructure_2
+        x = 3
+        y = 7
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_infrastructure_1
+        }
+
+        bypass = {
+            NOT = {
+                any_owned_state = {
+                    infrastructure < 9
+                }
+            }
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    infrastructure < 9
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    ##Military Production Side
+    focus = {
+        id = DEFAULT_build_military_0
+        x = 5
+        y = 2
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_economy_0
+        }
+
+        available = {
+            OR = {
+                has_tech = concentrated_industry
+                has_tech = dispersed_industry
+            }
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                add_ideas = asia_military_industry_0
+            }
+            IF = {
+                limit = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                add_ideas = military_industry_0
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_military_1
+        x = 5
+        y = 4
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_build_military_0
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                remove_ideas = asia_military_industry_0
+                add_ideas = asia_military_industry_1
+            }
+            IF = {
+                limit = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                remove_ideas = military_industry_0
+                add_ideas = military_industry_1
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_military_2
+        x = 5
+        y = 6
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_build_military_1
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                remove_ideas = asia_military_industry_1
+                add_ideas = asia_military_industry_2
+            }
+            IF = {
+                limit = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                remove_ideas = military_industry_1
+                add_ideas = military_industry_2
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_build_military_3
+        x = 5
+        y = 8
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_build_military_2
+        }
+
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_idea = asia_factory
+                }
+                remove_ideas = asia_military_industry_2
+                add_ideas = asia_military_industry_3
+            }
+            IF = {
+                limit = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                remove_ideas = military_industry_2
+                add_ideas = military_industry_3
+            }
+        }
+    }
+
+    ##Gonna unlock some special desisions 
+    focus = {
+        id = DEFAULT_economy_final
+        x = 3
+        y = 9
+        cost = 10
+        prerequisite = {
+            focus = DEFAULT_build_economy_3
+            focus = DEFAULT_build_military_3
+        }
+        prerequisite = {
+            focus = DEFAULT_infrastructure_2
+        }
+    }
+
+    ##########################################################
+	########################   ARMY   ########################
+	##########################################################
+    
+
+
+    ##########################################################
+	########################   NAVY   ########################
+	##########################################################
+
+
+
+    ##########################################################
+	######################   AIRFORCE   ######################
+	##########################################################
+}
