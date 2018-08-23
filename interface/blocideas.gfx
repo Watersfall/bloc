@@ -1,0 +1,17 @@
+SpriteTypes = {
+
+    SpriteType = {
+        name = GFX_idea_middle_east_oil
+        texturefile = gfx/interface/ideas/oil.dds
+    }
+
+    SpriteType = {
+        name = GFX_idea_america_africa_rm
+        texturefile = gfx/interface/ideas/rm.dds
+    }
+
+    SpriteType = {
+        name = GFX_idea_asia_factory
+        texturefile = gfx/interface/ideas/mg.dds
+    }
+}

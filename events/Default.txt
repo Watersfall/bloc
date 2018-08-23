@@ -1,0 +1,59 @@
+add_namespace = default
+
+country_event = {
+    id = default.0
+    title = default.0.t
+    desc = default.0.d
+    is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        IF = {
+            LIMIT = {
+                ROOT = {
+                    any_owned_state = {
+                        is_on_continent = middle_east
+                    }
+                }
+            }
+            add_ideas = middle_east_oil
+        }
+
+        IF = {
+            LIMIT = {
+                ROOT = {
+                    OR = {
+                        any_owned_state = {
+                            is_on_continent = africa
+                        }
+                        any_owned_state = {
+                            is_on_continent = north_aemrica
+                        }
+                        any_owned_state = {
+                            is_on_continent = south_america
+                        }
+                    }
+                }
+            }
+            add_ideas = america_africa_rm
+        }
+
+        IF = {
+            LIMIT = {
+                ROOT = {
+                    AND = {
+                        any_owned_state = {
+                            is_on_continent = asia
+                        }
+                        NOT = {
+                            any_owned_state = {
+                                is_on_continent = middle_east
+                            }
+                        }
+                    }
+                }
+            }
+            add_ideas = asia_factory
+        }
+    }
+}

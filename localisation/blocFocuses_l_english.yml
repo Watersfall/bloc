@@ -1,2 +1,17 @@
-﻿l_english:
+l_english:
+ DEFAULT_economy_0:0 "Economic Backbone"
+ DEFAULT_economy_0_desc:0 "To begin exploiting our region, we must first develop the appropriate technologies..."
+ DEFAULT_build_economy_0:0 "Region Bonus 1"
+ DEFAULT_build_economy_0_desc:0 "Our region has many advantages, we must begin exploiting these..."
+ DEFAULT_build_economy_1:0 "Region Bonus 2"
+ DEFAULT_build_economy_2:0 "Region Bonus 3"
+ DEFAULT_build_economy_3:0 "Region Bonus 4"
+ DEFAULT_infrastructure_0:0 "Build Up Infrastructure"
+ DEFAULT_infrastructure_1:0 "Build Public Schools"
+ DEFAULT_infrastructure_2:0 "Develop Vaccines"
+ DEFAULT_build_military_0:0 "Invest in our Military"
+ DEFAULT_build_military_1:0 "Strengthen our Military Industry"
+ DEFAULT_build_military_2:0 "Optimize the Production Lines"
+ DEFAULT_build_military_3:0 "Invest in Cheaper Production Tactics"
+ DEFAULT_economy_final:0 "Advanced Production Methods"
  LON_edgy_chat_shit:0 "Say Edgy Shit in ROP Chat"

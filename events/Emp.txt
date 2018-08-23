@@ -123,3 +123,73 @@ country_event = {
         }
     }
 }
+
+#Surrendering to the FB
+country_event = {
+    id = emp.3
+    name = emp.3.t
+    desc = emp.3.d
+
+    trigger = {
+        LON = {
+            has_capitulated = yes
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 150
+
+        #Negative modifiers
+        modifier = {
+            factor = 0.9
+            enemy_strength_ratio > 1
+        }
+        modifier = {
+            factor = 0.6
+            enemy_strength_ratio > 2
+        }
+        modifier = {
+            factor = 0.1
+            POI = {
+                has_capitulated = yes
+            }
+        }
+
+        #Positive modifiers incase they start _winning_
+        modifier = {
+            factor = 1.1 
+            enemy_strength_ratio < 1
+        }
+
+        modifier = {
+            factor = 1.6
+            enemy_strength_ratio < 2
+        }
+
+        modifier = {
+            factor = 10
+            JUK = {
+                has_capitulated = yes
+            }
+        }
+
+        modifier = {
+            factor = 3
+            OR = {
+                FRE = {
+                    has_capitulated = yes
+                }
+                WAL = {
+                    has_capitulated = yes
+                }
+            }
+        }
+
+        #If the war ends
+        #idk how to untrigger events
+        modifier = {
+            factor = 10000
+            has_war = false
+        }
+    }
+}
