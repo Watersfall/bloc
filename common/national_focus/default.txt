@@ -18,7 +18,7 @@ focus_tree = {
     focus = {
         id = DEFAULT_economy_0
         x = 3
-        y = 1
+        y = 0
         icon = na
         cost = 10
 
@@ -449,8 +449,10 @@ focus_tree = {
                 limit = {
                     has_idea = asia_factory
                 }
-                remove_ideas = asia_military_industry_0
-                add_ideas = asia_military_industry_1
+                swap_ideas = {
+                    remove_idea = asia_military_industry_0
+                    add_idea = asia_military_industry_1
+                }
             }
             IF = {
                 limit = {
@@ -458,8 +460,10 @@ focus_tree = {
                         has_idea = asia_factory
                     }
                 }
-                remove_ideas = military_industry_0
-                add_ideas = military_industry_1
+                swap_ideas = {
+                    remove_idea = military_industry_0
+                    add_idea = military_industry_1
+                }
             }
         }
     }
@@ -479,8 +483,10 @@ focus_tree = {
                 limit = {
                     has_idea = asia_factory
                 }
-                remove_ideas = asia_military_industry_1
-                add_ideas = asia_military_industry_2
+                swap_ideas = {
+                    remove_idea = asia_military_industry_1
+                    add_idea = asia_military_industry_2
+                }
             }
             IF = {
                 limit = {
@@ -488,8 +494,10 @@ focus_tree = {
                         has_idea = asia_factory
                     }
                 }
-                remove_ideas = military_industry_1
-                add_ideas = military_industry_2
+                swap_ideas = {
+                    remove_idea = military_industry_1
+                    add_idea = military_industry_2
+                }
             }
         }
     }
@@ -509,8 +517,10 @@ focus_tree = {
                 limit = {
                     has_idea = asia_factory
                 }
-                remove_ideas = asia_military_industry_2
-                add_ideas = asia_military_industry_3
+                swap_ideas = {
+                    remove_idea = asia_military_industry_2
+                    add_idea = asia_military_industry_3
+                }
             }
             IF = {
                 limit = {
@@ -518,8 +528,10 @@ focus_tree = {
                         has_idea = asia_factory
                     }
                 }
-                remove_ideas = military_industry_2
-                add_ideas = military_industry_3
+                swap_ideas = {
+                    remove_idea = military_industry_2
+                    add_idea = military_industry_3
+                }
             }
         }
     }
@@ -542,7 +554,128 @@ focus_tree = {
     ##########################################################
 	########################   ARMY   ########################
 	##########################################################
-    
+
+    ##This focus is required to do navy/airforce
+    focus = {
+        id = DEFAULT_army_0
+        x = 16
+        y = 0
+
+        cost = 10
+        
+        completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+    }
+
+    focus = {
+        id = DEFAULT_army_reforms_0
+        x = 15
+        y = 2
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_0
+        }
+
+        completion_reward = {
+            army_experience = 50
+            add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+        }
+    }
+
+    focus = {
+        id = DEFAULT_army_equipment_0
+        x = 17
+        y = 2
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_0
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+                category = support_tech
+			}
+        }
+    }
+
+    focus = {
+        id = DEFAULT_army_air
+        x = 14
+        y = 3
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_cas_0
+        }
+
+        prerequisite = {
+            focus = DEFAULT_army_reforms_0
+        }
+
+        mutually_exclusive = {
+            focus = DEFAULT_army_infantry
+            focus = DEFAULT_army_armor
+        }
+    }
+
+    focus = {
+        id = DEFAULT_army_infantry
+        x = 16
+        y = 3
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_reforms_0
+        }
+
+        prerequisite = {
+            focus = DEFAULT_army_equipment_0
+        }
+
+        mutually_exclusive = {
+            focus = DEFAULT_army_air
+            focus = DEFAULT_army_armor
+        }
+    }
+
+    focus = {
+        id = DEFAULT_army_armor
+        x = 18
+        y = 3
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_equipment_0
+        }
+
+        mutually_exclusive = {
+            focus = DEFAULT_army_air
+            focus = DEFAULT_army_infantry
+        }
+    }
 
 
     ##########################################################
@@ -554,4 +687,148 @@ focus_tree = {
     ##########################################################
 	######################   AIRFORCE   ######################
 	##########################################################
+
+    focus = {
+        id = DEFAULT_airforce_0
+        x = 11
+        y = 1
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_0
+        }
+
+        completion_reward = {
+            set_technology = {
+                early_fighter = 1
+                fighter1 = 1
+            }
+            add_equipment_to_stockpile = {
+                type = fighter_equipment_1
+                amount = 50
+                producer = ROOT
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_cas_0
+        x = 13
+        y = 2
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_0
+            focus = DEFAULT_airforce_0
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = cas_bonus
+                bonus = 0.75
+                uses = 1
+                category = cas_bomber
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_fighter_0
+        x = 11
+        y = 3
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_0
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = fighter_bonus
+                bonus = 0.75
+                uses = 1
+                category = light_fighter
+                category = cat_heavy_fighter
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_bomber_0
+        x = 9
+        y = 2
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_0
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name=bomber_bonus
+                bonus = 0.5
+                uses = 2
+                category = tactical_bomber
+                category = cat_strategic_bomber
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_bomber_1
+        x = 9
+        y = 6
+
+        cost = 10
+
+        prerequisite = {
+            focus=DEFAULT_airforce_bomber_0
+        }
+
+        available = {
+            is_in_faction = yes
+        }
+
+        completion_reward = {
+            add_ideas = strat_bomber_range
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_bomber_2
+        x = 7
+        y = 7
+        
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_bomber_1
+        }
+
+        prerequisite = {
+            focus = DEFAULT_build_military_2
+        }
+
+        completion_reward = {
+            IF = {
+                LIMIT = {
+                    has_idea = asia_factory
+                }
+                add_ideas = asia_strat_bomber_construction
+            }
+
+            IF = {
+                LIMIT = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                add_ideas = strat_bomber_construction
+            }
+        }
+    }
 }

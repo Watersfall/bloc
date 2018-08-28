@@ -27,3 +27,15 @@ news_event = {
         name = blocnews.1.good
     }
 }
+
+news_event = {
+    id = blocnews.2
+    title = blocnews.2.t
+    desc = blocnews.2.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = blocnews.2.a
+    }
+}

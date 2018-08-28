@@ -6,6 +6,10 @@ on_actions = {
                     id = default.0
                     hours = 6
                 }
+                news_event = {
+                    id = blocnews.2
+                    days = 2
+                }
             }
         }
     }
