@@ -27,7 +27,7 @@ history={ 1936.1.3.12={ owner = AAA controller = AAA buildings = { infrastructur
 	}
 	manpower=1198537
 	buildings_max_level_factor=1
-	state_category="city"
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

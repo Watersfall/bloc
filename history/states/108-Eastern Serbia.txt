@@ -4,7 +4,7 @@ state={
 	name="STATE_108" # Morava
 	manpower = 1533000
 	
-	state_category = town
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

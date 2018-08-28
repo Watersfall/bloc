@@ -2,7 +2,7 @@ state={
 	id=566
 	name="STATE_566" #Irktusk
 	
-	state_category = rural
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

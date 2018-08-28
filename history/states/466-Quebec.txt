@@ -2,7 +2,7 @@ state={
 	id=466
 	name="STATE_466"
 	
-	state_category = rural
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

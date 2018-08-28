@@ -2,7 +2,7 @@ state={
 	id=515
 	name="STATE_515"
 	
-	state_category = wasteland
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

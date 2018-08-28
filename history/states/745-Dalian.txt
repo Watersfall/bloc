@@ -4,7 +4,7 @@ state={
 	provinces={
 		7934 2033 10748 4981 12883 5037 2090 
 	}
-	state_category = large_town
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

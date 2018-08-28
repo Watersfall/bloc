@@ -4,7 +4,7 @@ state=
 	name="Southern Algeria"
 	manpower = 1437611
 	
-	state_category = town
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16

@@ -4,7 +4,7 @@ state={
 	name="STATE_557" # Mauritania
 	manpower = 429200
 	
-	state_category = wasteland
+	state_category = metropolis
 	resources={
 		chromium=16
 		oil=16
