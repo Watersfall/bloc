@@ -247,51 +247,6 @@ ideas = {
             }
         }
 
-        military_industry_2 = {
-            
-            allowed = {
-				always = no
-			}
-
-            allowed_civil_war = {
-				always = yes
-			}
-
-            removal_cost = -1
-
-            modifier = {
-                consumer_goods_factor = -0.10
-            }
-            equipment_bonus = {
-                infantry = {
-                    build_cost_ic = -0.10
-                }
-            }
-        }
-
-        asia_military_industry_2 = {
-
-            allowed = {
-				always = no
-			}
-
-            allowed_civil_war = {
-				always = yes
-			}
-
-            removal_cost = -1
-
-            modifier = {
-                consumer_goods_factor = -0.20
-            }
-
-            equipment_bonus = {
-                infantry = {
-                    build_cost_ic = -0.25
-                }
-            }
-        }
-
         military_industry_3 = {
             
             allowed = {
@@ -394,6 +349,103 @@ ideas = {
                     build_cost_ic = -0.25
                     instant = yes
                 }	
+            }
+        }
+
+        fighter_construction = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                fighter_equipment_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }	
+            }
+        }
+
+        asia_fighter_construction = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                fighter_equipment = {
+                    build_cost_ic = -0.25
+                    instant = yes
+                }	
+            }
+        }
+
+        cas_construction = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                CAS_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }	
+            }
+        }
+
+        asia_cas_construction = {
+
+            allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                CAS_equipment = {
+                    build_cost_ic = -0.25
+                    instant = yes
+                }	
+            }
+        }
+
+        cas_support = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                air_close_air_support_attack_factor = 0.15
             }
         }
     }

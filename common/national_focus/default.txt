@@ -641,14 +641,10 @@ focus_tree = {
 
     focus = {
         id = DEFAULT_army_infantry
-        x = 16
+        x = 18
         y = 3
 
         cost = 10
-
-        prerequisite = {
-            focus = DEFAULT_army_reforms_0
-        }
 
         prerequisite = {
             focus = DEFAULT_army_equipment_0
@@ -662,10 +658,14 @@ focus_tree = {
 
     focus = {
         id = DEFAULT_army_armor
-        x = 18
+        x = 16
         y = 3
 
         cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_army_reforms_0
+        }
 
         prerequisite = {
             focus = DEFAULT_army_equipment_0
@@ -735,6 +735,86 @@ focus_tree = {
     }
 
     focus = {
+        id = DEFAULT_airforce_cas_1
+        x = 13
+        y = 4
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_cas_0
+        }
+
+        prerequisite = {
+            focus = DEFAULT_army_air
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = cas_doctrine_bonus
+                bonus = 0.5
+                uses = 3
+                category = battlefield_support_tree
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_cas_2
+        x = 13
+        y = 6
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_cas_1
+        }
+
+        completion_reward = {
+            add_ideas = cas_support
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_cas_3
+        x = 15
+        y = 7
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_cas_2
+        }
+
+        prerequisite = {
+            focus = DEFAULT_build_military_2
+        }
+
+        mutually_exclusive = {
+            focus = DEFAULT_airforce_bomber_3
+            focus = DEFAULT_airforce_fighter_2
+        }
+
+        completion_reward = {
+            IF = {
+                LIMIT = {
+                    has_idea = asia_factory
+                }
+                add_ideas = asia_cas_construction
+            }
+
+            IF = {
+                LIMIT = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                add_ideas = cas_construction
+            }
+        }
+    }
+
+    focus = {
         id = DEFAULT_airforce_fighter_0
         x = 11
         y = 3
@@ -752,6 +832,67 @@ focus_tree = {
                 uses = 1
                 category = light_fighter
                 category = cat_heavy_fighter
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_fighter_1
+        x = 11
+        y = 5
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_fighter_0
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = fighter_bonus
+                bonus = 0.5
+                uses = 3
+                category = light_fighter
+                category = cat_heavy_fighter
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_fighter_2
+        x = 11
+        y = 7
+
+        cost = 10
+
+        prerequisite = {
+            focus = DEFAULT_airforce_fighter_1
+        }
+
+        prerequisite = {
+            focus = DEFAULT_build_military_2
+        }
+
+        mutually_exclusive = {
+            focus = DEFAULT_airforce_bomber_3
+            focus = DEFAULT_airforce_cas_3
+        }
+
+        completion_reward = {
+            IF = {
+                LIMIT = {
+                    has_idea = asia_factory
+                }
+                add_ideas = asia_fighter_construction
+            }
+
+            IF = {
+                LIMIT = {
+                    NOT = {
+                        has_idea = asia_factory
+                    }
+                }
+                add_ideas = fighter_construction
             }
         }
     }
@@ -786,6 +927,31 @@ focus_tree = {
         cost = 10
 
         prerequisite = {
+            focus=DEFAULT_airforce_bomber_2
+        }
+
+        available = {
+            is_in_faction = yes
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = bomber_doctrine_bonus
+                bonus = 0.5
+                uses = 3
+                category = strategic_destruction_tree
+            }
+        }
+    }
+
+    focus = {
+        id = DEFAULT_airforce_bomber_2
+        x = 9
+        y = 4
+
+        cost = 10
+
+        prerequisite = {
             focus=DEFAULT_airforce_bomber_0
         }
 
@@ -799,7 +965,7 @@ focus_tree = {
     }
 
     focus = {
-        id = DEFAULT_airforce_bomber_2
+        id = DEFAULT_airforce_bomber_3
         x = 7
         y = 7
         
@@ -811,6 +977,11 @@ focus_tree = {
 
         prerequisite = {
             focus = DEFAULT_build_military_2
+        }
+
+        mutually_exclusive = {
+            focus = DEFAULT_airforce_fighter_2
+            focus = DEFAULT_airforce_cas_3
         }
 
         completion_reward = {
